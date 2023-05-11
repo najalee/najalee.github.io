@@ -1,0 +1,15 @@
+.main {
+  /* margin: 3rem;
+  width: 100%;
+  max-width: 55rem; */
+  padding-top: 6em;
+}
+
+.MainNavigation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #f0f0f0; /* Adjust as needed */
+  z-index: 1;
+}

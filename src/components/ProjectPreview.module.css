@@ -1,0 +1,33 @@
+.projectContainer{
+    border: 3px solid #63895A;
+    margin-top: 3%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+
+    color: white;
+}
+
+.projectContainer h1, .projectContainer p {
+  display: inline-block;
+}
+
+.projectContainer h1{
+    margin: 0;
+    vertical-align: top;
+    padding-right: 10%;
+    color:white;
+    font-size: 200%;
+}
+
+.projectContainer h1:hover{
+    color: #ACFF9E;
+}
+
+.projectContainer p{
+    font-size: 150%;
+    margin: 0;
+    margin-left: 20%;
+}

@@ -5,9 +5,105 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #424242;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.navigation { 
+  list-style: none;
+  float: right;
+  transform: translateX(-35%);
+  margin: 10%;
+  position:absolute;
+  right: 0;
+  top: 38%;
+  font-size: 200%;
+  /* transform: translateY(-50%); */
+}
+
+.container {
+  position: relative;
+  bottom: 0px;
+  width: 50%;
+}
+
+.homeGreeting {
+  color: #8D8D8D;
+  font-size: 200%;
+
+  position: absolute;
+  left: 25.2%;
+  transform: translateY(+265%);
+  margin: 0;
+  padding: 0;
+  z-index: 1;
+}
+
+.homeTitle {
+  color: #ACFF9E;
+  font-size: 650%;
+  
+  /* position: absolute; */
+  position: relative;
+  /* top: 1000%; */
+  transform: translateY(+100%);
+  /* top: 35%; */
+  left: 25%;
+  margin: 0;
+  margin-top: 5%;
+  /* bottom: 100%; */
+  top: 0;
+  padding: 0;
+  z-index: 2;
+}
+
+
+.pageTitle {
+  font-size: 600%;
+  color: #ACFF9E;
+  transform: translateY(+100%);
+  transform: translateX(+8.5%);
+  /* left: 25%; */
+  padding: 0;
+  margin: 0;
+}
+
+.paragraphs {
+  font-size: 175%;
+  float: right;
+  transform: translateX(+21%);
+  color: white;
+  padding: 0;
+  margin: 0;
+  width:45%;
+  float: left;
+}
+
+.paragraphs a {
+  color: #ACFF9E;
+}
+
+.paragraphs a:hover{
+  text-decoration: underline;
+}
+
+.projectsList {
+  width: 60%;
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+  color: #8D8D8D;
+}
+
+a:hover,
+a:active,
+a.active {
+  color: #ACFF9E;
+  /* text-decoration: underline; */
 }
