@@ -1,5 +1,7 @@
 .projectContainer{
     border: 3px solid #63895A;
+    border-radius: 2em;
+    background-color: #4e614a;
     margin-top: 3%;
 
     display: flex;
@@ -8,6 +10,12 @@
     padding: 10px;
 
     color: white;
+    transition: all .2s ease-in-out; 
+}
+
+.projectContainer:hover{
+    transform: scale(1.1);
+    background-color: #85a97c;
 }
 
 .projectContainer h1, .projectContainer p {
@@ -20,10 +28,6 @@
     padding-right: 10%;
     color:white;
     font-size: 200%;
-}
-
-.projectContainer h1:hover{
-    color: #ACFF9E;
 }
 
 .projectContainer p{

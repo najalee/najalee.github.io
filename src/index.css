@@ -5,8 +5,20 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #424242;
+  /* background-color: #424242; */
+  background: radial-gradient(circle at var(--mouse-x, 50%) var(--mouse-y, 50%), #5a4141 1%, #232323 100%);
+
+  /* background: radial-gradient(circle,#ACFF9E, #424242); */
+  /* background: radial-gradient(black,green); */
+
+  height:100vh;
+  width: 100%;
+
+  /* border-top: 2px solid #ACFF9E;
+  border-left: 2px solid #ACFF9E;
+  box-sizing: border-box; */
 }
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
@@ -16,12 +28,12 @@ code {
 .navigation { 
   list-style: none;
   float: right;
-  transform: translateX(-35%);
+  transform: translateX(-40%);
   margin: 10%;
   position:absolute;
   right: 0;
-  top: 38%;
-  font-size: 200%;
+  /* top: 38%; */
+  font-size: 250%;
   /* transform: translateY(-50%); */
 }
 
@@ -37,7 +49,7 @@ code {
 
   position: absolute;
   left: 25.2%;
-  transform: translateY(+265%);
+  transform: translateY(+425%);
   margin: 0;
   padding: 0;
   z-index: 1;
@@ -45,7 +57,7 @@ code {
 
 .homeTitle {
   color: #ACFF9E;
-  font-size: 650%;
+  font-size: 900%;
   
   /* position: absolute; */
   position: relative;
@@ -59,18 +71,61 @@ code {
   top: 0;
   padding: 0;
   z-index: 2;
+
+  /* overflow: hidden;
+  border-right: 0.15em solid #000000;
+  white-space: nowrap;
+  animation: typing 1s steps(12), blink-caret 0.75s step-end infinite; */
 }
 
+.homeBelowTitle {
+  color: #8D8D8D;
+  font-size: 200%;
+
+  position: absolute;
+  left: 25.2%;
+  transform: translateY(+500%);
+  margin: 0;
+  padding: 0;
+  z-index: 1;
+}
+/* 
+.homeTitle {
+  overflow: hidden;
+  border-right: 0.15em solid #000000;
+  white-space: nowrap;
+  animation: typing 1s steps(12), blink-caret 0.75s step-end infinite;
+} */
 
 .pageTitle {
   font-size: 600%;
   color: #ACFF9E;
   transform: translateY(+100%);
   transform: translateX(+8.5%);
-  /* left: 25%; */
   padding: 0;
   margin: 0;
+
+  /* overflow: hidden;
+  border-right: 0.15em solid #000000;
+  white-space: nowrap;
+  animation: typing 1s steps(12); */
 }
+
+/* @keyframes typing {
+  from {
+    width: 0;
+  }
+} */
+
+/* @keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #000000;
+  }
+} */
+
 
 .paragraphs {
   font-size: 175%;
@@ -96,6 +151,16 @@ code {
   margin: auto;
 }
 
+.projectTag {
+  width: 60%;
+  margin: auto;
+  right: 0;
+  color: #ACFF9E;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
 a {
   text-decoration: none;
   color: #8D8D8D;
@@ -107,3 +172,61 @@ a.active {
   color: #ACFF9E;
   /* text-decoration: underline; */
 }
+
+.grow { 
+  transition: all .2s ease-in-out; 
+}
+
+.grow:hover { 
+  transform: scale(1.1);
+}
+
+.bottomRight {
+  position: fixed;
+  color: #ACFF9E;
+  float:right;
+  /* transform:translateY(1000%); */
+  bottom: 0;
+  
+}
+
+.individualLetters {
+  display: inline-block;
+  transition: transform 0.2s;
+}
+
+.individualLetters:hover {
+  transform: scale(1.2);
+}
+
+/* .vertical{
+     transform: rotate(180deg);
+     writing-mode: vertical-lr;
+     text-align: center;
+} */
+
+
+.fadeInParagraphs {
+  opacity: 0;
+  animation: fadeIn 2s forwards;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+#second{
+  animation-delay: 1s;
+}
+
+#third{
+  animation-delay: 2s;
+}
+
+p {
+  margin-top: 0em;
+  margin-bottom: 0em;
+}
+
+

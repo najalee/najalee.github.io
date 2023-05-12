@@ -3,6 +3,11 @@
   width: 100%;
   max-width: 55rem; */
   padding-top: 6em;
+
+  border-top: 2px solid #ACFF9E;
+  border-left: 2px solid #ACFF9E;
+  box-sizing: border-box;
+  height: 100vh;
 }
 
 .MainNavigation {

@@ -6,30 +6,29 @@ import ContactScreen from './pages/ContactScreen';
 import HomeScreen from './pages/HomeScreen';
 import ProjectsScreen from './pages/ProjectsScreen';
 import SkillsScreen from './pages/SkillsScreen';
-import PortfolioWebsiteScreen from './pages/projects_screens/PortfolioWebsiteScreen';
+import RadialGradientMouseTracker from "./components/pretty/GradientMouseTracker";
 
 import Layout from './components/layout/Layout';
 
+//www.youtube.com/watch?v=Q9n2mLqXFpU
 
 function App() {
   return (
-    <BrowserRouter>
-      <Layout>
-        <Routes>
-          <Route>
-            <Route index element={<HomeScreen />} />
+    <section>
+      <RadialGradientMouseTracker />
+      <BrowserRouter>
+        <Layout>
+          <Routes>
+            <Route path="/" element={<HomeScreen />} />
             <Route path="about" element={<AboutScreen />} />
             <Route path="contact" element={<ContactScreen />} />
             <Route path="skills" element={<SkillsScreen />} />
             <Route path="projects" element={<ProjectsScreen />} />
-            <Route
-              path="projects/portfolio_website"
-              element={<PortfolioWebsiteScreen />}
-            />
-          </Route>
-        </Routes>
-      </Layout>
-    </BrowserRouter>
+          </Routes>
+        </Layout>
+        <div class="bottomRight">&nbsp;najaleeh@gmail.com</div>
+      </BrowserRouter>
+    </section>
   );
 }
 
