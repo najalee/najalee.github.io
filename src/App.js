@@ -1,6 +1,6 @@
 // import logo from './logo.svg';
 // import './App.css';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import AboutScreen from './pages/AboutScreen';
 import ContactScreen from './pages/ContactScreen';
 import HomeScreen from './pages/HomeScreen';
@@ -16,7 +16,7 @@ function App() {
   return (
     <section>
       <RadialGradientMouseTracker />
-      <BrowserRouter>
+      <HashRouter>
         <Layout>
           <Routes>
             <Route path="/" element={<HomeScreen />} />
@@ -27,7 +27,7 @@ function App() {
           </Routes>
         </Layout>
         <div class="bottomRight">&nbsp;najaleeh@gmail.com</div>
-      </BrowserRouter>
+      </HashRouter>
     </section>
   );
 }
