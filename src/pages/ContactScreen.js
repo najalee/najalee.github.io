@@ -9,7 +9,7 @@ function ContactScreen() {
             {typedTitle}
             {showCursor && "_"}
           </h1>
-          <div class="paragraphs">
+          <div class="paragraphs fadeInParagraphs">
             <p>
               Want to get in touch? Reach out to me through my{" "}
               <a
@@ -27,7 +27,8 @@ function ContactScreen() {
               >
                 LinkedIn
               </a>
-              , or email me at <a href="mailto:najaleeh@gmail.com">najaleeh@gmail.com</a>.
+              , or email me at{" "}
+              <a href="mailto:najaleeh@gmail.com">najaleeh@gmail.com</a>.
             </p>
           </div>
         </div>

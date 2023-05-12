@@ -16,7 +16,7 @@ function ProjectsScreen() {
 
       <div class="projectsList">
         <ProjectPreview
-          link="https://github.com/najalee/portfolio_website"
+          link="https://github.com/najalee/najalee.github.io"
           name="portfolio_website"
           description="a personal website that displays past work and projects. created using React.js and hosted with Github Pages"
         />

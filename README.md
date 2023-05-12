@@ -4,4 +4,4 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 This is my website which I use to display my work and projects. You can find my contact information here.
 
-Visit it here [https://najalee.github.io/portfolio_website/](https://najalee.github.io/portfolio_website/)
+Visit: [https://najalee.github.io/](https://najalee.github.io/)
