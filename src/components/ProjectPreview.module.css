@@ -107,3 +107,18 @@
         font-size: 75%;
     }
 }
+
+/*
+================================================ 6th MEDIA QUERY ================================================
+*/
+
+/* text .4 of original */
+@media screen and (max-width: 400px){
+    .projectContainer h1{
+        font-size: 80%;
+    }
+
+    .projectContainer p{
+        font-size: 60%;
+    }
+}
