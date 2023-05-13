@@ -25,6 +25,11 @@ function ProjectsScreen() {
           name="portfolio_website"
           description="a personal website that displays past work and projects. created using React.js and hosted with Github Pages"
         />
+        <ProjectPreview
+          link="https://github.com/ACM-Research/IoTSecurityVulnerabilities"
+          name="security_vulnerabilities_iot"
+          description="a semester-long research project done alongside the ACM research divison at UTD."
+        />
       </div>
     </section>
   );
