@@ -27,8 +27,8 @@ function ProjectsScreen() {
         />
         <ProjectPreview
           link="https://github.com/ACM-Research/IoTSecurityVulnerabilities"
-          name="security_vulnerabilities_iot"
-          description="a semester-long research project done alongside the ACM research divison at UTD."
+          name="iot_vulnerabilities"
+          description="a semester-long research project done alongside the ACM research divison at UTD. researched security vulnerabilities in iot devices"
         />
       </div>
     </section>
