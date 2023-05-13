@@ -27,11 +27,83 @@
     vertical-align: top;
     padding-right: 10%;
     color:white;
-    font-size: 200%;
+    /* font-size: 200%; */
 }
 
 .projectContainer p{
-    font-size: 150%;
     margin: 0;
-    margin-left: 20%;
+}
+
+/*
+================================================ 1st MEDIA QUERY ================================================
+*/
+
+@media screen and (min-width: 1366px){
+    .projectContainer h1{
+        font-size: 200%;
+    }
+
+    .projectContainer p{
+        font-size: 150%;
+    }
+}
+
+/*
+================================================ 2nd MEDIA QUERY ================================================
+*/
+
+/* text .9 of original */
+@media screen and (max-width: 1366px){
+    .projectContainer h1{
+        font-size: 180%;
+    }
+
+    .projectContainer p{
+        font-size: 135%;
+    }
+}
+
+/*
+================================================ 3rd MEDIA QUERY ================================================
+*/
+
+/* text .725 of original */
+@media screen and (max-width: 1024px){
+    .projectContainer h1{
+        font-size: 145%;
+    }
+
+    .projectContainer p{
+        font-size: 108.75%;
+    }
+}
+
+/*
+================================================ 4th MEDIA QUERY ================================================
+*/
+
+/* text .525 of original */
+@media screen and (max-width: 768px){
+    .projectContainer h1{
+        font-size: 105%;
+    }
+
+    .projectContainer p{
+        font-size: 78.75%;
+    }
+}
+
+/*
+================================================ 5th MEDIA QUERY ================================================
+*/
+
+/* text .5 of original */
+@media screen and (max-width: 480px){
+    .projectContainer h1{
+        font-size: 100%;
+    }
+
+    .projectContainer p{
+        font-size: 75%;
+    }
 }

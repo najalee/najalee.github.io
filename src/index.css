@@ -1,232 +1,355 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  /* background-color: #424242; */
-  background: radial-gradient(circle at var(--mouse-x, 50%) var(--mouse-y, 50%), #5a4141 1%, #232323 100%);
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background: radial-gradient(circle at var(--mouse-x, 50%) var(--mouse-y, 50%), #5a4141 1%, #232323 100%);
 
-  /* background: radial-gradient(circle,#ACFF9E, #424242); */
-  /* background: radial-gradient(black,green); */
-
-  height:100vh;
-  width: 100%;
-
-  /* border-top: 2px solid #ACFF9E;
-  border-left: 2px solid #ACFF9E;
-  box-sizing: border-box; */
-}
-
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-
-.navigation { 
-  list-style: none;
-  float: right;
-  transform: translateX(-40%);
-  margin: 10%;
-  position:absolute;
-  right: 0;
-  /* top: 38%; */
-  font-size: 250%;
-  /* transform: translateY(-50%); */
-}
-
-.container {
-  position: relative;
-  bottom: 0px;
-  width: 50%;
-}
-
-.homeGreeting {
-  color: #8D8D8D;
-  font-size: 200%;
-
-  position: absolute;
-  left: 25.2%;
-  transform: translateY(+425%);
-  margin: 0;
-  padding: 0;
-  z-index: 1;
-}
-
-.homeTitle {
-  color: #ACFF9E;
-  font-size: 900%;
-  
-  /* position: absolute; */
-  position: relative;
-  /* top: 1000%; */
-  transform: translateY(+100%);
-  /* top: 35%; */
-  left: 25%;
-  margin: 0;
-  margin-top: 5%;
-  /* bottom: 100%; */
-  top: 0;
-  padding: 0;
-  z-index: 2;
-
-  /* overflow: hidden;
-  border-right: 0.15em solid #000000;
-  white-space: nowrap;
-  animation: typing 1s steps(12), blink-caret 0.75s step-end infinite; */
-}
-
-.homeBelowTitle {
-  color: #8D8D8D;
-  font-size: 200%;
-
-  position: absolute;
-  left: 25.2%;
-  transform: translateY(+500%);
-  margin: 0;
-  padding: 0;
-  z-index: 1;
-}
-/* 
-.homeTitle {
-  overflow: hidden;
-  border-right: 0.15em solid #000000;
-  white-space: nowrap;
-  animation: typing 1s steps(12), blink-caret 0.75s step-end infinite;
-} */
-
-.pageTitle {
-  font-size: 600%;
-  color: #ACFF9E;
-  transform: translateY(+100%);
-  transform: translateX(+8.5%);
-  padding: 0;
-  margin: 0;
-
-  /* overflow: hidden;
-  border-right: 0.15em solid #000000;
-  white-space: nowrap;
-  animation: typing 1s steps(12); */
-}
-
-/* @keyframes typing {
-  from {
-    width: 0;
+    height:100vh;
+    width: 100%;
   }
-} */
 
-/* @keyframes blink-caret {
-  from, to {
-    border-color: transparent;
+
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
   }
-  50% {
-    border-color: #000000;
+
+  .container {
+    position: relative;
+    bottom: 0px;
+    width: 50%;
   }
-} */
 
+  .homeGreeting {
+    color: #8D8D8D;
 
-.paragraphs {
-  font-size: 175%;
-  float: right;
-  transform: translateX(+21%);
-  color: white;
-  padding: 0;
-  margin: 0;
-  width:45%;
-  float: left;
+    position: absolute;
+    left: 25.2%;
+    transform: translateY(+425%);
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+  }
+
+  .homeTitle {
+    color: #ACFF9E;
+    
+    position: relative;
+    transform: translateY(+100%);
+    left: 25%;
+    margin: 0;
+    margin-top: 5%;
+    top: 0;
+    padding: 0;
+    z-index: 2;
+  }
+
+  .homeBelowTitle {
+    color: #8D8D8D;
+    position: absolute;
+    white-space: nowrap;
+    left: 25.2%;
+    transform: translateY(+500%);
+    margin: 0;
+    padding: 0;
+    z-index: 1;    
+  }
+
+  .pageTitle {
+    /* font-size: 600%; */
+    color: #ACFF9E;
+    transform: translateY(+100%);
+    transform: translateX(+8.5%);
+    padding: 0;
+    margin: 0;
+  }
+
+  .paragraphs {
+    /* font-size: 175%; */
+    float: right;
+    transform: translateX(+21%);
+    color: white;
+    padding: 0;
+    margin: 0;
+    width:45%;
+    float: left;
+    
+  }
+
+  .paragraphs a {
+    color: #ACFF9E;
+  }
+
+  .paragraphs a:hover{
+    text-decoration: underline;
+  }
+
+  .projectsList {
+    width: 60%;
+    margin: auto;
+  }
+
+  .projectTag {
+    width: 60%;
+    margin: auto;
+    right: 0;
+    color: #ACFF9E;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  a {
+    text-decoration: none;
+    color: #8D8D8D;
+  }
+
+  a:hover,
+  a:active,
+  a.active {
+    color: #ACFF9E;
+  }
+
+  .grow { 
+    transition: all .2s ease-in-out; 
+  }
+
+  .grow:hover { 
+    transform: scale(1.1);
+  }
+
+  .bottomRight {
+    position: fixed;
+    color: #ACFF9E;
+    float:right;
+    bottom: 0;
+    
+  }
+
+  .individualLetters {
+    display: inline-block;
+    transition: transform 0.2s;
+  }
+
+  .individualLetters:hover {
+    transform: scale(1.2);
+  }
+
+  .fadeInParagraphs {
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+  }
+
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+  #second{
+    animation-delay: 1s;
+  }
+
+  #third{
+    animation-delay: 2s;
+  }
+
+  p {
+    margin-top: 0em;
+    margin-bottom: 0em;
+  }
+
+/*
+================================================ 1st MEDIA QUERY ================================================
+*/
+
+@media screen and (min-width: 1366px){
+/*
+==================================
+HOME SCREEN STYLES
+==================================
+*/
+  .homeGreeting {
+    font-size: 200%;
+  }
+  .homeTitle {
+    font-size: 900%;
+  }
+  .homeBelowTitle {
+    font-size: 200%;
+  }
+
+/*
+==================================
+OTHER SCREEN STYLES
+==================================
+*/
+  .pageTitle {
+    font-size: 600%;
+  }
+  .paragraphs {
+    font-size: 175%;
+  }
+
+  .projectTag {
+    font-size: 100%;
+  }
 }
 
-.paragraphs a {
-  color: #ACFF9E;
+/*
+================================================ 2nd MEDIA QUERY ================================================
+*/
+
+/* text .9 of original */
+@media screen and (max-width: 1366px){
+/*
+==================================
+HOME SCREEN STYLES
+==================================
+*/
+  .homeGreeting {
+    font-size: 180%;
+  }
+  .homeTitle {
+    /* color: white; */
+    font-size: 810%;
+  }
+  .homeBelowTitle {
+    font-size: 180%;
+  }
+
+/*
+==================================
+OTHER SCREEN STYLES
+==================================
+*/
+  .pageTitle {
+    font-size: 540%;
+  }
+  .paragraphs {
+    font-size: 157.5%;
+  }
+
+  .projectTag {
+    font-size: 90%;
+  }
 }
 
-.paragraphs a:hover{
-  text-decoration: underline;
+/*
+================================================ 3rd MEDIA QUERY ================================================
+*/
+
+/* text .725 of original */
+@media screen and (max-width: 1024px){
+/*
+==================================
+HOME SCREEN STYLES
+==================================
+*/
+  .homeGreeting {
+    font-size: 145%;
+  }
+  .homeTitle {
+    /* color: blue; */
+    font-size: 652.5%;
+  }
+  .homeBelowTitle {
+    font-size: 145%;
+  }
+
+/*
+==================================
+OTHER SCREEN STYLES
+==================================
+*/
+  .pageTitle {
+    font-size: 435%;
+  }
+  .paragraphs {
+    font-size: 126.875%;
+  }
+
+  .projectTag {
+    font-size: 72.5%;
+  }
 }
 
-.projectsList {
-  width: 60%;
-  margin: auto;
+/*
+================================================ 4th MEDIA QUERY ================================================
+*/
+
+/* text .525 of original */
+@media screen and (max-width: 768px){
+/*
+==================================
+HOME SCREEN STYLES
+==================================
+*/
+  .homeGreeting {
+    font-size: 105%;
+  }
+  .homeTitle {
+    /* color: red; */
+    font-size: 472.5%;
+  }
+  .homeBelowTitle {
+    font-size: 105%;
+  }
+
+/*
+==================================
+OTHER SCREEN STYLES
+==================================
+*/
+  .pageTitle {
+    font-size: 315%;
+  }
+  .paragraphs {
+    font-size: 91.875%;
+  }
+
+  .projectTag {
+    font-size: 52.5%;
+  }
 }
 
-.projectTag {
-  width: 60%;
-  margin: auto;
-  right: 0;
-  color: #ACFF9E;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
+/*
+================================================ 5th MEDIA QUERY ================================================
+*/
+
+/* text .5 of original */
+@media screen and (max-width: 480px){
+/*
+==================================
+HOME SCREEN STYLES
+==================================
+*/
+  .homeGreeting {
+    font-size: 100%;
+  }
+  .homeTitle {
+    /* color: purple; */
+    font-size: 450%;
+  }
+  .homeBelowTitle {
+    font-size: 100%;
+  }
+
+/*
+==================================
+OTHER SCREEN STYLES
+==================================
+*/
+  .pageTitle {
+    font-size: 300%;
+  }
+  .paragraphs {
+    font-size: 87.5%;
+  }
+
+  .projectTag {
+    font-size: 50%;
+  }
 }
-
-a {
-  text-decoration: none;
-  color: #8D8D8D;
-}
-
-a:hover,
-a:active,
-a.active {
-  color: #ACFF9E;
-  /* text-decoration: underline; */
-}
-
-.grow { 
-  transition: all .2s ease-in-out; 
-}
-
-.grow:hover { 
-  transform: scale(1.1);
-}
-
-.bottomRight {
-  position: fixed;
-  color: #ACFF9E;
-  float:right;
-  /* transform:translateY(1000%); */
-  bottom: 0;
-  
-}
-
-.individualLetters {
-  display: inline-block;
-  transition: transform 0.2s;
-}
-
-.individualLetters:hover {
-  transform: scale(1.2);
-}
-
-/* .vertical{
-     transform: rotate(180deg);
-     writing-mode: vertical-lr;
-     text-align: center;
-} */
-
-
-.fadeInParagraphs {
-  opacity: 0;
-  animation: fadeIn 2s forwards;
-}
-
-@keyframes fadeIn {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
-}
-
-#second{
-  animation-delay: 1s;
-}
-
-#third{
-  animation-delay: 2s;
-}
-
-p {
-  margin-top: 0em;
-  margin-bottom: 0em;
-}
-
-
