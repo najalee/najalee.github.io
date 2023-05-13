@@ -12,9 +12,14 @@ function ProjectsScreen() {
         {showCursor && "_"}
       </h1>
 
-      <div class="projectTag">select project for details</div>
+      <div class="projectTag fadeInParagraphs" style={{ animationDelay: "1s" }}>
+        select project for details. scroll for more
+      </div>
 
-      <div class="projectsList">
+      <div
+        class="projectsList fadeInParagraphs"
+        style={{ animationDelay: "1s" }}
+      >
         <ProjectPreview
           link="https://github.com/najalee/najalee.github.io"
           name="portfolio_website"
