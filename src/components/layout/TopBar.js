@@ -1,8 +1,8 @@
 import { Link, useLocation } from "react-router-dom";
-import github_logo from "../../stuff/github_logo.png";
-import github_logo_hover from "../../stuff/github_logo_hover.png";
-import linkedin_logo from "../../stuff/linkedin_logo.png";
-import linkedin_logo_hover from "../../stuff/linkedin_logo_hover.png";
+import github_logo from "../../files/github_logo.png";
+import github_logo_hover from "../../files/github_logo_hover.png";
+import linkedin_logo from "../../files/linkedin_logo.png";
+import linkedin_logo_hover from "../../files/linkedin_logo_hover.png";
 
 import classes from "./TopBar.module.css";
 

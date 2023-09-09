@@ -13,8 +13,12 @@ function SkillsScreen() {
           </h1>
           <div class="paragraphs">
             <p class="fadeInParagraphs" style={{ animationDelay: ".2s" }}>
-              Time management, organization, communication Assembly, Java,
-              Javascript, HTML/CSS, React.js, Python, C++
+              <strong>Soft skills</strong> Time management, organization,
+              communication, team work
+            </p>
+            <p class="fadeInParagraphs" style={{ animationDelay: ".2s" }}>
+              <strong>Programming:</strong> Assembly, Java, Javascript,
+              HTML/CSS, React.js, Python, C++
             </p>
             <br />
 
@@ -22,9 +26,7 @@ function SkillsScreen() {
               <strong>Relevant Courses:</strong>
             </p>
             <p class="fadeInParagraphs" style={{ animationDelay: "1.2s" }}>
-              Data Structures and Algorithms, Computer Architecture, Digital
-              Logic, Software Engineering, Systems Programming in UNIX, Discrete
-              Math 1&2
+              Automata Theory, OS Concepts, Advanced Algorithms Design, Programming Languages Paradigms
             </p>
             <br />
 
@@ -32,8 +34,7 @@ function SkillsScreen() {
               <strong>Upcoming Courses:</strong>
             </p>
             <p class="fadeInParagraphs" style={{ animationDelay: "2.2s" }}>
-              Automata Theory, Advanced Data Structures and Algorithms,
-              Programming Language Paradigms, Operating Systems Concepts
+              TBD
             </p>
           </div>
         </div>

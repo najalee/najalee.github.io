@@ -5,8 +5,11 @@
       sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background: radial-gradient(circle at var(--mouse-x, 50%) var(--mouse-y, 50%), #5a4141 1%, #232323 100%);
+    /* background: radial-gradient(circle at var(--mouse-x, 50%) var(--mouse-y, 50%), #5a4141 1%, #232323 100%); */
+    background: radial-gradient(circle at var(--mouse-x, 100%) var(--mouse-y, 100%), #ACFF9E .001%, #232323 3%);
+    /* background: radial-gradient(circle at var(--mouse-x, 50%) var(--mouse-y, 50%), #ACFF9E .1%); */
 
+    cursor: none;
     height:100vh;
     width: 100%;
 
@@ -87,6 +90,7 @@
 
   .paragraphs a:hover{
     text-decoration: underline;
+    /* cursor:none; */
   }
 
   .projectsList {
@@ -126,6 +130,7 @@
   a:active,
   a.active {
     color: #ACFF9E;
+    cursor:none;
   }
 
   .grow { 
